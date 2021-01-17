@@ -1,0 +1,37 @@
+.Toolbar {
+    height: 6rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    z-index: 90;
+}
+.Toolbar button{
+    background-color: gold;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 0.2rem solid black;
+    padding: 0rem 3rem 0rem 3rem;
+}
+.Toolbar button:hover{
+    background-color: black;
+    color: gold;
+    cursor: pointer;
+}
+
+.Toolbar nav {
+    height: 100%;
+}
+
+
+@media (max-width: 499px) {
+    .DesktopOnly {
+        display: none;
+    }
+}

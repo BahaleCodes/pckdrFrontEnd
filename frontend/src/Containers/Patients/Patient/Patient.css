@@ -1,0 +1,9 @@
+.Patient{
+    margin-left: 10%;
+    width: 70%;
+    height: 5rem;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
 
+import Layout from './Components/Layout/Layout';
+import Home from './Containers/Home/Home';
+import Patients from './Containers/Patients/Patients';
+import Records from './Containers/Records/Records';
+import NewPatient from './Containers/Patients/NewPatient/NewPatient';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<h1>PocketDoctor</h1>
+			<Layout>
+				<Route path="/" exact component={Home} />
+				<Route path="/patients" component={Patients} />
+				<Route path="/records" component={Records} />
+				<Route path="/new-patient" component={NewPatient} />
+			</Layout>
+		</div>
+	);
 }
 
 export default App;

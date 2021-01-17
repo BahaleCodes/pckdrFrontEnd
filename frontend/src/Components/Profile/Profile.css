@@ -1,0 +1,24 @@
+.Profile {
+    background-color: black;
+    padding: 0.1rem;
+    height: 13rem;
+    width: 13rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+.Profile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+.Profile h1{
+    width: 80%;
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    font-size: 18px;
+}
+.Profile h1:hover {
+    color: silver;
+}

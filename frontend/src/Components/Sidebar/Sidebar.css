@@ -1,0 +1,101 @@
+.SideBar {
+    position: fixed;
+    width: 16%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.SideBar a{
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.SideBar a:focus {
+    color: silver;
+}
+.NavSection{
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+.Profile {
+    text-align: center;
+    padding-top: 1rem;
+    color: #fbc926;
+    font-size: 35px;
+    font-weight: bold;
+    height: 5rem;
+    width: 10%;
+}
+
+.socialMediaIcons {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.Icon {
+    width: 3rem;
+    height: 3.2rem;
+    padding: 0.3rem;
+}
+
+@media (min-width: 500px) {
+    .SideBar {
+        display: none;
+    }
+}
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-100%);
+}
+
+/* 
+@media (max-width: 1500px) {
+    .SideBar a{
+        font-size: 18px;
+    }
+    .SideBar img{
+        height: 25px;
+        padding: 9px;
+    }
+}
+@media (max-width: 1300px) {
+    .SideBar a{
+        font-size: 16px;
+    }
+    .SideBar img{
+        height: 20px;
+        padding: 6px;
+    }
+}
+@media (max-width: 1000px) {
+    .SideBar a{
+        font-size: 14px;
+    }
+    .SideBar img{
+        height: 15px;
+        padding: 3px;
+    }
+}*/
+@media (max-width: 500px) {
+    .SideBar {
+        position: fixed;
+        width: 17rem;
+        max-width: 70%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 200;
+        background-color: #333;
+        padding: 2rem 1.7rem;
+        box-sizing: border-box;
+        transition: transform 0.3s ease-out;
+    } 
+}

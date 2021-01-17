@@ -1,0 +1,50 @@
+.Home{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+.Head{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+.Body{
+    width: 100%;
+}
+.Buttons{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 50vw;
+    height: 25rem;
+}
+
+.AddPatient{
+    padding: 0;
+    margin: 0rem;
+    width: 100rem;
+    height: 10rem;
+    border: 0.5rem solid greenyellow;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home button{
+    width: 50%;
+    height: 10rem;
+    text-align: justify;
+    font-size: 4rem;
+    padding: 1rem;
+    background-color: #333;
+}
+.Home button:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 gold;
+    transform: translateY(-0.2rem);
+    transition: transform 150ms;
+}
+
+.Home h1{
+    margin: 0;
+}
